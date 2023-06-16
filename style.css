@@ -1,0 +1,346 @@
+/* For Main heading (h1,h2 and h3) */
+@font-face {
+    font-family: Devonshire;
+    src: url(./fonts/Devonshire-Regular.ttf);
+}
+
+/* For cards qoutes */
+@font-face {
+    font-family: damion ;
+    src: url(./fonts/Damion-Regular.ttf);
+}
+
+
+/* Paintings Ainmation */
+@keyframes pop{
+    0% {
+        background-color: antiquewhite;
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(0.8);
+    }
+    100% {
+        background-color: wheat;
+        transform: rotate(360deg) scale(1.2);
+    }
+}
+
+
+/* Calligraphy Animation 1 */
+    @keyframes fadnessInTop {
+        0% {
+            transform: translatey(-50px) scale(0.8)
+        }
+         100%
+          {
+            background-color: rgb(255, 222, 161);
+            transform: translatey(0) scale(1);
+        }
+  }
+  /* Calligraphy Animation 2 */
+  @keyframes fadnessIndown {
+    0% {
+        transform: translatey(0) scale(0.8)
+    }
+     100%
+      {
+        background-color: rgb(248, 227, 178);
+        transform: translatey(50px) scale(1);
+    }
+}
+
+body{
+    background-color: rgb(251, 242, 231);
+}
+
+header{
+    background-color: rgb(247, 235, 220);
+    height: 34px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 6px;
+    padding: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;   
+}
+
+nav a{
+    background-color: whitesmoke;
+    padding: 10px;
+    color: grey;
+    border-bottom: maroon double 2px;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: rgb(245, 227, 196);
+    padding: 10px;
+    color: black;
+    border: rgb(86, 3, 31) double 4px;
+    text-decoration: none;
+}
+
+h1{
+    background-image: url(./images/1682533475342.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-top: maroon double 5px;
+    border-bottom: maroon double 5px;
+    background-color: rgba(144, 105, 105, 0.1);
+    font-family: Devonshire;
+    font-size: 90px;
+    color: maroon;
+    text-align: center;
+    justify-content: center;
+    padding: 140px;
+}
+
+
+h2{
+    font-family: Devonshire;
+    font-size: 50px;
+    color: maroon;   
+}
+
+/* Section for me and gif to be in flex and font style */
+.styleaboutme{
+    display: flex;
+    padding: 10px;
+    font-family: damion;
+}
+
+/* me class for p of few words about me */
+.me{
+    font-family: damion;
+    font-size: 24px;
+    margin: 2px;
+}
+
+
+
+ /* Image used with Few words about  */
+.gif{
+    padding-right: 30%;
+    padding-left: 30px;
+    width: 300px;
+    height: 300px;
+}
+
+#gallery{
+    font-family: Devonshire;
+    font-size: 50px;
+    color: maroon;
+}
+
+h3{
+    font-family: Devonshire;
+    font-size: 40px;
+    margin-left: 20%;
+    margin-bottom: 0%;
+}
+
+div a{
+    color: black;
+    text-decoration: none;
+}
+
+/* cards p styling */
+p{
+    font-family: damion; 
+    margin: 2px;  
+}
+
+
+/* Painting related styling */
+.cards{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+
+/* painting cards styling like border */
+.cards1{
+    text-align: center;
+    border: solid;
+    margin: 5px;
+    width: 255px;
+    height: 330px;
+    font-size: 14px;    
+}
+
+/* Painting cards animation */
+.cards1:hover{
+    animation: pop 1s forwards;
+    box-shadow: 15px 15px 15px grey;
+}
+
+/* padding for every image */
+img{
+    padding-top: 2px;
+}
+
+/* calligraphy cards in flex */
+.callicards{
+   display: flex;
+   justify-content: center;
+}
+
+/* calligraphy images margin */
+.cards2 img{
+
+    margin: 5px;
+    margin-top: 15px; 
+} 
+
+/* calligraphy cards styling like border etc.part 1 */
+.cards2{
+    text-align: center;
+    border: solid;
+    color: black;
+    margin: 10px;
+    width: 255px;
+    height: 250px;
+    font-size: 14px;
+}
+/* Animation for calligraphy part 1 */
+.cards2:hover{
+  animation: fadnessInTop 1.2 both;
+  box-shadow: 15px 15px 15px grey;
+
+}
+
+/*  calligraphy cards styling like border etc.part 2 */
+.cards3{
+    margin-top: 25px;
+    text-align: center;
+    border: solid;
+    width: 255px;
+    height: 280px;
+    font-size: 14px; 
+}
+
+/*  Animation for calligraphy part  */
+.cards3:hover{
+    animation: fadnessIndown 1.2 both;
+    box-shadow: 15px 15px 15px grey;
+}
+
+/* Styling in blog */
+#blog {
+    padding: 10px;
+    margin-top: 70px;
+    border: dashed 3px gray;
+    background-image: url(./images/tubes-fresh-paints.jpg);
+    background-size: cover;
+    margin: 10px;
+    padding: 10px;
+}
+#blog  p{
+    font-family: damion;
+    font-size: 20px;
+}
+#blog li{
+    font-family: damion;
+    font-size: 20px;
+}
+/* container for background */
+.paintblog{
+  background-color: rgba(280, 250, 240, 0.6);
+}
+
+
+
+/* flex for contact us and newsletter  */
+.end{
+    display: flex;
+    margin-top: 70px;
+}
+
+/* group of contact us to message and submit styling */
+.margin{
+    margin-left: 35px;
+    margin-bottom: 20px;
+}
+
+
+/* insta logo clicking styling */
+.contactus{
+ margin-left: 15px;
+ margin-bottom: 20px;
+ margin-top:-50px;
+ 
+}
+
+
+/* both logos insta and email prominating styling */
+article  a img:hover{
+    background-color: antiquewhite;
+    border: rgb(16, 12, 13) double 4px;
+}
+
+/* message submit button styling */
+.submit{
+    margin-top: 5px;
+    margin-left: 52%;
+    margin-right: 2%;
+    font-size: 20px;
+    background-color: whitesmoke;
+    padding: 10px;
+    color: grey;
+    border-bottom: maroon double 2px;
+    text-decoration: none;
+}
+.submit:hover{
+    background-color: rgb(245, 227, 196);
+    padding: 10px;
+    color: black;
+    border: rgb(86, 3, 31) double 4px;
+    text-decoration: none;
+}
+
+
+/* message input size changes into square */
+.size{
+    width: 190px;
+    height: 130px;
+  }
+
+.newsletter{
+    margin-left: 55%;
+}
+
+.newsletter p{
+    font-size: 25px;
+}
+
+/* representing newsletter input, and submit button and its styling */
+.sub p{
+    margin-top: 5px;
+    margin-left: 50%;
+    margin-right: 20%;
+    font-size: 20px;
+    background-color: whitesmoke;
+    color: grey;
+    border-bottom: maroon double 2px;
+    text-decoration: none;
+}
+.sub p:hover{
+    margin-left: 50%;
+    background-color: rgb(245, 227, 196);
+    padding: 10px;
+    color: black;
+    border: rgb(86, 3, 31) double 4px;
+    text-decoration: none;
+}
+
+.sub input{
+    width: 262px;
+}
