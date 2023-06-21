@@ -4,7 +4,8 @@
 
 Final Web Development Project for the Orientation Course (MAT) at Digital Career Institute (DCI)
 
-[view the page](https://yusra-ahmad.github.io/Web-dev-orientation-final-project/)
+⬇️ link below and visit my first web pafe 🙂
+[Click on page](https://yusra-ahmad.github.io/Web-dev-orientation-final-project/)
 
 ## 👩‍💻 Workings
 - HTML
